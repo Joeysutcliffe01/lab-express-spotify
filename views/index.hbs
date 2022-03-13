@@ -1,11 +1,24 @@
-<div class="container">
+<main class="main-form">
 
-  <form id="search-bar" method="GET" action="/artist-search">
+  <div class="container-form">
 
-    <input id="user[-input" type="text" placeholder="Enter your song here" />
+    <form
+      id="search-bar"
+      method="get"
+      action="/artist-search"
+      enctype="application/json"
+    >
 
-    <button type="submit">Submit</button>
+      <input
+        id="user[-input"
+        type="text"
+        name="artist"
+        placeholder="Enter an Artist name here"
+      />
 
-  </form>
+      <button class="submit-btn" type="submit">Search for an Artist</button>
+    </form>
 
-</div>
+  </div>
+
+</main>
